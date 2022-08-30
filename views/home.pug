@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    div(class="container border" style="width: 500px; margin-top: 20px;")
+        script.
+            const holidaysJson = `!{JSON.stringify(holidays)}`;
+        .col
+            div(class="row")
+                h1(class="display-1" id="days") 0 días
+            div(class="row")
+                .col-md-auto
+                    span(class="material-icons" style="font-size: xxx-large;") event
+                .col
+                    .row
+                        h6(class="font-weight-bold" id="motive") Motivo
+                    .row
+                        h6(id="format_date") Fecha
+            .row.dropdown-divider
+            div(class="row")
+                span(class="material-icons") info
+                | &nbsp;
+                h6(id="kind") Sector
+            .row.dropdown-divider
+            div(class="row")
+                .col
+                    button(type="button" class="btn btn-light float-left" id="previous_button")
+                        span(class="material-icons") navigate_before
+                .col
+                    button(type="button" class="btn btn-light float-right" id="next_button")
+                        span(class="material-icons") navigate_next
