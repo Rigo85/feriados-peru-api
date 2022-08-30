@@ -1,5 +1,5 @@
 # Feriados Perú API
-Se realiza un web scrapping a ```https://www.gob.pe/feriados``` para obtener los feriados aprobados por el gobierno 
+Se realiza un web scraping a ```https://www.gob.pe/feriados``` para obtener los feriados aprobados por el gobierno 
 en Perú. Con esta info se crea un servicio que permita consumir dicha info.
 
 ## ```/api/holiday/:date``` 
